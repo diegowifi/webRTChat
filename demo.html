@@ -5,8 +5,8 @@
         <style>
             .videoContainer {
                 position: relative;
-                width: 200px;
-                height: 150px;
+                width: 400px;
+                height: 350px;
             }
             .videoContainer video {
                 position: absolute;
@@ -31,6 +31,11 @@
             #localScreenContainer {
                 display: none;
             }
+
+            #localVideo{
+                height: 350px;
+                width: 400px;
+            }
         </style>
     </head>
     <body>
@@ -46,7 +51,7 @@
         </div>
         <hr>
         <div class="videoContainer">
-            <video id="localVideo" style="height: 350px;" oncontextmenu="return false;"></video>
+            <video id="localVideo" oncontextmenu="return false;"></video>
             <div id="localVolume" class="volumeBar"></div>
         </div>
         <div id="localScreenContainer" class="videoContainer">
